@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="300" viewBox="0 0 1100 300" role="img" aria-labelledby="title desc">
+  <title id="title">Digital Communications MATLAB motion banner</title>
+  <desc id="desc">Animated SVG banner for AWGN, BER, modulation, companding and LDPC.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="45%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#a7f3d0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      @keyframes dash { to { stroke-dashoffset: -220; } }
+      @keyframes float { 0%,100% { transform: translateY(0); opacity: .78; } 50% { transform: translateY(-12px); opacity: 1; } }
+      @keyframes pulse { 0%,100% { opacity: .35; r: 4; } 50% { opacity: 1; r: 7; } }
+      .title { font: 800 48px Segoe UI, Arial, sans-serif; fill: #ffffff; letter-spacing: 0; }
+      .sub { font: 650 20px Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
+      .mono { font: 700 16px Consolas, monospace; fill: #a7f3d0; }
+      .chip { fill: rgba(15,23,42,.56); stroke: rgba(255,255,255,.24); stroke-width: 1; }
+      .chiptext { font: 700 16px Segoe UI, Arial, sans-serif; fill: #ecfeff; }
+    </style>
+  </defs>
+  <rect width="1100" height="300" rx="26" fill="url(#bg)"/>
+  <path d="M40 210 C160 120 260 280 385 188 S610 100 740 182 S930 250 1060 138" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round" stroke-dasharray="28 18" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" from="0" to="-220" dur="5.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M40 238 C170 168 250 260 390 226 S620 170 760 224 S940 275 1060 210" fill="none" stroke="#bfdbfe" stroke-width="3" stroke-linecap="round" stroke-dasharray="16 16" opacity=".78">
+    <animate attributeName="stroke-dashoffset" from="0" to="180" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <g transform="translate(70 56)">
+    <text x="0" y="0" class="mono">MATLAB signal lab / reviewer-ready portfolio</text>
+    <text x="0" y="68" class="title">Digital Communications</text>
+    <text x="0" y="104" class="sub">AWGN - Matched Filter - BER - QPSK - Companding - LDPC</text>
+  </g>
+  <g style="animation: float 5s ease-in-out infinite">
+    <rect x="756" y="46" width="108" height="42" rx="14" class="chip"/>
+    <text x="782" y="73" class="chiptext">AWGN</text>
+  </g>
+  <g style="animation: float 6s ease-in-out infinite">
+    <rect x="890" y="64" width="104" height="42" rx="14" class="chip"/>
+    <text x="922" y="91" class="chiptext">BER</text>
+  </g>
+  <g style="animation: float 5.8s ease-in-out infinite">
+    <rect x="776" y="122" width="120" height="42" rx="14" class="chip"/>
+    <text x="807" y="149" class="chiptext">QPSK</text>
+  </g>
+  <g style="animation: float 6.4s ease-in-out infinite">
+    <rect x="922" y="142" width="112" height="42" rx="14" class="chip"/>
+    <text x="952" y="169" class="chiptext">LDPC</text>
+  </g>
+  <g fill="#fbbf24" filter="url(#glow)">
+    <circle cx="168" cy="210" r="4" style="animation:pulse 2s ease-in-out infinite"/>
+    <circle cx="385" cy="188" r="4" style="animation:pulse 2.4s ease-in-out infinite"/>
+    <circle cx="740" cy="182" r="4" style="animation:pulse 2.8s ease-in-out infinite"/>
+    <circle cx="1014" cy="154" r="4" style="animation:pulse 2.2s ease-in-out infinite"/>
+  </g>
+</svg>

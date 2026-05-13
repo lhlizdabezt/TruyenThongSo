@@ -1,153 +1,109 @@
-# Truyen Thong So - Digital Communications MATLAB Labs
+# 📡 Truyền Thông Số · MATLAB Digital Communications Labs
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=150&color=0:0f172a,50:1d4ed8,100:0f766e&text=Digital%20Communications%20MATLAB%20Labs&fontColor=ffffff&fontSize=36&fontAlignY=42&desc=AWGN%20%7C%20Matched%20Filter%20%7C%20BASK%2FBPSK%2FBFSK%2FQPSK%20%7C%20Companding%20%7C%20LDPC&descAlignY=68&descSize=15" alt="Digital Communications MATLAB Labs banner" />
+  <img src="assets/digital-comms-motion.svg" alt="Banner chuyển động của repo Truyền thông Số" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/course-Digital%20Communications-0f766e?style=for-the-badge" alt="Digital Communications" />
-  <img src="https://img.shields.io/badge/language-MATLAB-2563eb?style=for-the-badge" alt="MATLAB" />
-  <img src="https://img.shields.io/badge/domain-Signal%20Processing-334155?style=for-the-badge" alt="Signal Processing" />
-  <img src="https://img.shields.io/badge/status-coursework%20portfolio-7c3aed?style=for-the-badge" alt="Coursework Portfolio" />
-</p>
-
-This repository collects MATLAB coursework and group project artifacts for **Truyen thong so / Digital Communications** at the Faculty of Electronics and Telecommunications, VNUHCM - University of Science.
-
-The work demonstrates simulation-based understanding of digital communication systems: signal-space representation, AWGN channels, matched-filter detection, binary/passband modulation, QPSK, companding for speech signals, and LDPC decoding.
-
-## Engineering Scope
-
-<table>
-  <tr>
-    <td width="33%">
-      <b>Detection in AWGN</b><br />
-      Binary signal transmission, noise modeling, matched-filter recovery, decision thresholding, and simulated-vs-theoretical bit error probability.
-    </td>
-    <td width="33%">
-      <b>Digital Modulation</b><br />
-      BASK, BPSK, BFSK and QPSK passband systems with BER curves over Eb/N0 using Monte Carlo simulation.
-    </td>
-    <td width="33%">
-      <b>Source / Channel Coding</b><br />
-      A-law and mu-law speech companding, uniform quantization, SNR comparison, LDPC Tanner graph and bit-flipping decoding.
-    </td>
-  </tr>
-</table>
-
-## Visual Results
-
-<p align="center">
-  <img src="Nhom5_DoAnTTS/Project1/project1_uniform.png" width="48%" alt="Uniform quantization result" />
-  <img src="Nhom5_DoAnTTS/Project1/project1_mu.png" width="48%" alt="Mu-law companding result" />
+  <a href="https://github.com/lhlizdabezt/TruyenThongSo/releases/latest"><img src="https://img.shields.io/github/v/release/lhlizdabezt/TruyenThongSo?style=for-the-badge&label=Release&color=0f766e" alt="Bản phát hành mới nhất" /></a>
+  <a href="https://github.com/lhlizdabezt/TruyenThongSo/tags"><img src="https://img.shields.io/github/v/tag/lhlizdabezt/TruyenThongSo?style=for-the-badge&label=Tag&color=2563eb" alt="Tag Git mới nhất" /></a>
+  <img src="https://img.shields.io/badge/MATLAB-DSP%20%2B%20BER-D95319?style=for-the-badge" alt="MATLAB DSP BER" />
+  <img src="https://img.shields.io/badge/Portfolio-HR%20Ready-8b5cf6?style=for-the-badge" alt="Portfolio sẵn sàng cho HR" />
 </p>
 
 <p align="center">
-  <img src="Nhom5_DoAnTTS/Project1/project1_a.png" width="48%" alt="A-law companding result" />
-  <img src="Nhom5_DoAnTTS/Project4/tanner_ldpc.png" width="48%" alt="LDPC Tanner graph" />
+  <b>Repo bài tập và đồ án môn Truyền thông Số</b> của <a href="https://github.com/lhlizdabezt">Lương Hải Long</a>, sinh viên ngành <b>Điện tử Viễn thông</b>. Nội dung tập trung vào mô phỏng kênh AWGN, bộ lọc phối hợp, BER, điều chế số, nén giãn tín hiệu thoại và giải mã LDPC bằng MATLAB.
 </p>
 
-## Repository Structure
+---
 
-```text
-.
-|-- README.md
-|-- RELEASE_NOTES.md
-|-- Chapter3/
-|   `-- 22207056_LuongHaiLong/
-|       |-- Question1.m
-|       `-- Question2.m
-|-- Chapter4/
-|   `-- 22207056_LuongHaiLong/
-|       |-- Problem1.m
-|       |-- Problem2.m
-|       |-- Problem3.m
-|       `-- Problem4.m
-|-- Chapter4QPSK/
-|   `-- 22207056_LuongHaiLong/
-|       `-- QPSK.m
-|-- Nhom5_DoAnTTS/
-|   |-- Nhom5_DoAnTTS.pdf
-|   |-- Nhom5_Slide_DoAnTTS.pdf
-|   |-- Project1/
-|   |   |-- Project1.m
-|   |   |-- Project1_Brief.pdf
-|   |   |-- MaleSpeech-16-4-mono-20secs.wav
-|   |   `-- project1_*.png
-|   `-- Project4/
-|       |-- DoAn4.m
-|       |-- Cau1.m
-|       |-- Cau2.m
-|       |-- DoAn4_Brief.pdf
-|       `-- *.png
-|-- Chapter3.zip
-|-- Chapter4.zip
-|-- Chapter4QPSK.zip
-`-- Nhom5_DoAnTTS.zip
-```
+## 🎯 Tín hiệu chính cho người đánh giá
 
-## Technical Contents
-
-| Module | File(s) | Main concepts |
+| Điều cần chứng minh | Bằng chứng trong repo | Giá trị kỹ thuật |
 | --- | --- | --- |
-| Chapter 3 | `Chapter3/22207056_LuongHaiLong/Question1.m` | Binary waveform generation, random bit stream construction, AWGN channel and received-signal visualization. |
-| Chapter 3 | `Chapter3/22207056_LuongHaiLong/Question2.m` | Matched-filter detection, decision thresholding, BER simulation and theoretical error probability comparison. |
-| Chapter 4 - BASK | `Chapter4/22207056_LuongHaiLong/Problem1.m` | Binary ASK modulation, coherent matched-filter receiver and BER over Eb/N0. |
-| Chapter 4 - BPSK | `Chapter4/22207056_LuongHaiLong/Problem2.m` | Antipodal BPSK signaling, zero-threshold detection and BER comparison. |
-| Chapter 4 - BFSK | `Chapter4/22207056_LuongHaiLong/Problem3.m` | Orthogonal BFSK carriers, matched-filter decision variable and simulated BER. |
-| Chapter 4 - BER summary | `Chapter4/22207056_LuongHaiLong/Problem4.m` | Semilog BER comparison between BASK, BPSK and BFSK. |
-| QPSK | `Chapter4QPSK/22207056_LuongHaiLong/QPSK.m` | Four-symbol constellation, two orthonormal basis functions, nearest-distance detection and BER. |
-| Project 1 | `Nhom5_DoAnTTS/Project1/Project1.m` | Speech quantization, A-law/mu-law companding, expansion and SNR evaluation. |
-| Project 4 | `Nhom5_DoAnTTS/Project4/DoAn4.m` | LDPC parity-check matrix, Tanner graph rendering, syndrome check and bit-flipping decoding. |
-| Reports | `Nhom5_DoAnTTS/*.pdf` | Course report and presentation slide deck for Project 1 and Project 4. |
+| Hiểu nền tảng truyền thông số | Mô phỏng bit, dạng sóng, nhiễu AWGN, bộ lọc phối hợp và ngưỡng quyết định | Nối được lý thuyết xác suất lỗi với kết quả mô phỏng |
+| Làm chủ điều chế số | BASK, BPSK, BFSK, QPSK và đường cong BER theo `Eb/N0` | So sánh được độ bền của từng sơ đồ điều chế |
+| Biết xử lý tín hiệu thực | Mẫu thoại `.wav`, lượng tử đều, nén giãn A-law/mu-law và đánh giá SNR | Có năng lực đưa tín hiệu đời thực vào pipeline MATLAB |
+| Có tư duy mã hóa kênh | Ma trận kiểm tra chẵn lẻ, đồ thị Tanner, syndrome và bit-flipping LDPC | Hiểu luồng phát hiện/sửa lỗi ở mức triển khai |
+| Đóng gói như portfolio | README, hình kết quả, báo cáo PDF, slide, tag và release | HR và kỹ sư có thể đọc nhanh mà không phải đoán cấu trúc |
 
-## How To Run
+## 🧭 Bản đồ nội dung
 
-Requirements:
+| Hạng mục | Đường dẫn | Nội dung |
+| --- | --- | --- |
+| Chương 3 | `Chapter3/22207056_LuongHaiLong/` | Tạo chuỗi bit, mô phỏng tín hiệu trong AWGN, bộ lọc phối hợp và xác suất lỗi |
+| Chương 4 | `Chapter4/22207056_LuongHaiLong/` | BASK, BPSK, BFSK, so sánh BER bằng đồ thị semilog |
+| QPSK | `Chapter4QPSK/22207056_LuongHaiLong/QPSK.m` | Chòm sao 4 điểm, cơ sở trực chuẩn, tách sóng theo khoảng cách gần nhất |
+| Đồ án 1 | `Nhom5_DoAnTTS/Project1/` | Lượng tử tín hiệu thoại, A-law, mu-law, khôi phục và đánh giá SNR |
+| Đồ án 4 | `Nhom5_DoAnTTS/Project4/` | LDPC, đồ thị Tanner, syndrome, thuật toán bit-flipping |
+| Báo cáo và slide | `Nhom5_DoAnTTS/*.pdf` | Tài liệu trình bày, báo cáo nhóm và bằng chứng học thuật |
 
-- MATLAB with Signal Processing / Communications-related functions available.
-- For `Project1.m`, keep `MaleSpeech-16-4-mono-20secs.wav` in the same folder as the script.
-- Run scripts from their own directory or let the scripts resolve `baseDir` where implemented.
+## 🖼️ Kết quả trực quan
 
-Example MATLAB workflow:
+<p align="center">
+  <img src="Nhom5_DoAnTTS/Project1/project1_uniform.png" width="48%" alt="Kết quả lượng tử đều" />
+  <img src="Nhom5_DoAnTTS/Project1/project1_mu.png" width="48%" alt="Kết quả nén giãn mu-law" />
+</p>
+
+<p align="center">
+  <img src="Nhom5_DoAnTTS/Project1/project1_a.png" width="48%" alt="Kết quả nén giãn A-law" />
+  <img src="Nhom5_DoAnTTS/Project4/tanner_ldpc.png" width="48%" alt="Đồ thị Tanner LDPC" />
+</p>
+
+## ⚙️ Cách chạy nhanh
+
+Yêu cầu môi trường:
+
+| Thành phần | Ghi chú |
+| --- | --- |
+| MATLAB | Khuyến nghị có các hàm xử lý tín hiệu/truyền thông tương ứng |
+| Dữ liệu thoại | Giữ `MaleSpeech-16-4-mono-20secs.wav` cùng thư mục với `Project1.m` |
+| Thư mục chạy | Nên `cd` vào đúng thư mục chứa script trước khi chạy |
+
+Ví dụ:
 
 ```matlab
-cd('D:\TTS\Nhom5_DoAnTTS\Project1')
+cd('Nhom5_DoAnTTS/Project1')
 run('Project1.m')
 
-cd('D:\TTS\Nhom5_DoAnTTS\Project4')
+cd('../Project4')
 run('DoAn4.m')
 
-cd('D:\TTS\Chapter4QPSK\22207056_LuongHaiLong')
+cd('../../Chapter4QPSK/22207056_LuongHaiLong')
 run('QPSK.m')
 ```
 
-## Project Highlights For Reviewers
+## 🧪 Ma trận kỹ thuật
 
-- Uses Monte Carlo simulation to connect theory and measured BER behavior.
-- Implements coherent matched-filter receivers for BASK, BPSK, BFSK and QPSK.
-- Compares modulation robustness using semilog BER curves over Eb/N0.
-- Processes a real speech sample through uniform quantization and companding pipelines.
-- Builds an LDPC Tanner graph and performs iterative bit-flipping error correction.
-- Includes source code, reports, slides, generated plots and original submission archives.
+| Module | File chính | Điểm đáng xem |
+| --- | --- | --- |
+| AWGN cơ bản | `Question1.m` | Sinh bit ngẫu nhiên, biểu diễn dạng sóng, thêm nhiễu và quan sát tín hiệu nhận |
+| Matched filter | `Question2.m` | Tính biến quyết định, đặt ngưỡng, so sánh BER mô phỏng và lý thuyết |
+| BASK | `Problem1.m` | Điều chế ASK nhị phân, tách sóng kết hợp, BER theo `Eb/N0` |
+| BPSK | `Problem2.m` | Tín hiệu đối cực, ngưỡng 0, BER thấp hơn khi cùng năng lượng bit |
+| BFSK | `Problem3.m` | Sóng mang trực giao, bộ lọc phối hợp hai nhánh |
+| QPSK | `QPSK.m` | Mã hóa 2 bit/ký hiệu, cơ sở trực chuẩn, quyết định theo khoảng cách |
+| Companding | `Project1.m` | So sánh lượng tử đều với A-law và mu-law trên tín hiệu thoại |
+| LDPC | `DoAn4.m`, `Cau1.m`, `Cau2.m` | Ma trận `H`, syndrome, đồ thị Tanner và vòng lặp sửa lỗi |
 
-## GitHub Metadata
+## 🏷️ Metadata đề xuất
 
-**Repository description**
+| Nhóm | Nội dung |
+| --- | --- |
+| Mô tả repo | Bài tập Truyền thông Số MATLAB: AWGN, matched filter, BER BASK/BPSK/BFSK/QPSK, A-law/mu-law, LDPC, báo cáo và slide. |
+| Topics | `digital-communications`, `matlab`, `signal-processing`, `telecommunications`, `awgn`, `matched-filter`, `ber`, `bpsk`, `qpsk`, `ldpc`, `companding`, `channel-coding`, `hcmus`, `electronics-engineering` |
+| Release | Dùng release mới nhất để ghi lại phiên bản portfolio đã có README, hình minh chứng, tag và mô tả kỹ thuật đầy đủ |
 
-```text
-Digital Communications MATLAB coursework: AWGN matched-filter detection, BASK/BPSK/BFSK/QPSK BER simulation, A-law/mu-law companding, LDPC decoding, reports and slides.
-```
+## 👤 Tác giả
 
-**Suggested topics**
+| Trường | Thông tin |
+| --- | --- |
+| Họ tên | **Lương Hải Long** |
+| Ngành | Điện tử Viễn thông |
+| GitHub | [github.com/lhlizdabezt](https://github.com/lhlizdabezt) |
+| LinkedIn | [linkedin.com/in/lhlizdabezt](https://www.linkedin.com/in/lhlizdabezt) |
+| Portfolio | [Hồ sơ GitHub kỹ thuật](https://github.com/lhlizdabezt/lhlizdabezt) |
 
-```text
-digital-communications, matlab, signal-processing, telecommunications, awgn, matched-filter, ber, bask, bpsk, bfsk, qpsk, ldpc, channel-coding, companding, a-law, mu-law, hcmus
-```
+## 📌 Ghi chú học thuật
 
-## Release
-
-Initial release: `v1.0.0` - public portfolio version of the Digital Communications MATLAB labs and group project package.
-
-## Academic Note
-
-This repository is organized as a coursework portfolio and learning archive. Reports, briefs and slides are retained for academic traceability; original ownership belongs to the listed authors and course staff where applicable.
+Repo này là hồ sơ học tập và portfolio kỹ thuật. Báo cáo, slide, dữ liệu và mã nguồn được giữ lại để người đánh giá có thể truy vết mục tiêu bài học, cách triển khai và kết quả mô phỏng.
