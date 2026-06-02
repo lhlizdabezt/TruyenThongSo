@@ -4,3 +4,10 @@
 *.zip binary
 *.mat binary
 *.fig binary
+*.md text eol=lf
+*.svg text eol=lf
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pptx binary
+*.docx binary
