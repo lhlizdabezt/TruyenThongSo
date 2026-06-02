@@ -20,7 +20,6 @@
       </feMerge>
     </filter>
     <style>
-      @keyframes dash { to { stroke-dashoffset: -220; } }
       @keyframes float { 0%,100% { transform: translateY(0); opacity: .78; } 50% { transform: translateY(-12px); opacity: 1; } }
       @keyframes pulse { 0%,100% { opacity: .35; r: 4; } 50% { opacity: 1; r: 7; } }
       .title { font: 800 48px Segoe UI, Arial, sans-serif; fill: #ffffff; letter-spacing: 0; }
@@ -31,12 +30,10 @@
     </style>
   </defs>
   <rect width="1100" height="300" rx="26" fill="url(#bg)"/>
-  <path d="M40 210 C160 120 260 280 385 188 S610 100 740 182 S930 250 1060 138" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round" stroke-dasharray="28 18" filter="url(#glow)">
-    <animate attributeName="stroke-dashoffset" from="0" to="-220" dur="5.5s" repeatCount="indefinite"/>
-  </path>
-  <path d="M40 238 C170 168 250 260 390 226 S620 170 760 224 S940 275 1060 210" fill="none" stroke="#bfdbfe" stroke-width="3" stroke-linecap="round" stroke-dasharray="16 16" opacity=".78">
-    <animate attributeName="stroke-dashoffset" from="0" to="180" dur="7s" repeatCount="indefinite"/>
-  </path>
+  <path d="M40 210 C160 120 260 280 385 188 S610 100 740 182 S930 250 1060 138" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round" filter="url(#glow)">
+</path>
+  <path d="M40 238 C170 168 250 260 390 226 S620 170 760 224 S940 275 1060 210" fill="none" stroke="#bfdbfe" stroke-width="3" stroke-linecap="round" opacity=".78">
+</path>
   <g transform="translate(70 56)">
     <text x="0" y="0" class="mono">MATLAB signal lab / reviewer-ready portfolio</text>
     <text x="0" y="68" class="title">Digital Communications</text>
