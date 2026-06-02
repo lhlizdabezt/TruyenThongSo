@@ -1,27 +1,17 @@
-# Release Notes
+# English Portfolio Refresh
 
-## v1.0.0 - Initial public Digital Communications portfolio
+## Main updates
 
-Release date: 2026-05-13
+- Rewrote the public README in English for HR and engineering review.
+- Standardized the repository summary, reviewer map, evidence highlights, scope boundaries and release/tag links.
+- Preserved an evidence-first tone: clear technical nouns, bounded claims and no production ownership beyond the repository material.
 
-### Included
+## Repository evidence
 
-- Chapter 3 MATLAB simulations for binary signaling, AWGN transmission and matched-filter detection.
-- Chapter 4 MATLAB simulations for BASK, BPSK, BFSK and comparative BER curves.
-- QPSK MATLAB simulation with orthonormal basis functions and nearest-distance detection.
-- Group Project 1: A-law and mu-law speech companding, uniform quantization, SNR evaluation and generated plots.
-- Group Project 4: LDPC Tanner graph, parity-check matrix, syndrome checking and bit-flipping decoding.
-- PDF report, slide deck, project briefs, generated figures and original ZIP submission archives.
+- AWGN channel analysis and matched-filter workflows.
+- BER analysis for BASK, BPSK, BFSK and QPSK.
+- A-law and mu-law companding exercises.
 
-### GitHub release body
+## Scope
 
-```text
-Initial public release for the Digital Communications MATLAB coursework portfolio.
-
-Included:
-- AWGN and matched-filter detection simulations.
-- BASK, BPSK, BFSK and QPSK BER simulations.
-- A-law and mu-law speech companding project with generated plots.
-- LDPC Tanner graph and bit-flipping decoding project.
-- Course report, slide deck, project briefs and original submission archives.
-```
+Coursework and report repository for communications engineering. It is not a production modem implementation.
