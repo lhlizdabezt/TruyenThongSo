@@ -1,64 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="300" viewBox="0 0 1100 300" role="img" aria-labelledby="title desc">
-  <title id="title">Digital Communications MATLAB motion banner</title>
-  <desc id="desc">Animated SVG banner for AWGN, BER, modulation, companding and LDPC.</desc>
+  <title id="title">Digital Communications MATLAB topic map</title>
+  <desc id="desc">Line-free animated SVG topic map for AWGN, BER, QPSK, companding and LDPC.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#08111f"/>
-      <stop offset="45%" stop-color="#0f766e"/>
-      <stop offset="100%" stop-color="#2563eb"/>
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="48%" stop-color="#164e63" />
+      <stop offset="100%" stop-color="#0f766e" />
     </linearGradient>
-    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="50%" stop-color="#fbbf24"/>
-      <stop offset="100%" stop-color="#a7f3d0"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
     <style>
-      @keyframes float { 0%,100% { transform: translateY(0); opacity: .78; } 50% { transform: translateY(-12px); opacity: 1; } }
-      @keyframes pulse { 0%,100% { opacity: .35; r: 4; } 50% { opacity: 1; r: 7; } }
-      .title { font: 800 48px Segoe UI, Arial, sans-serif; fill: #ffffff; letter-spacing: 0; }
-      .sub { font: 650 20px Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
-      .mono { font: 700 16px Consolas, monospace; fill: #a7f3d0; }
-      .chip { fill: rgba(15,23,42,.56); stroke: rgba(255,255,255,.24); stroke-width: 1; }
-      .chiptext { font: 700 16px Segoe UI, Arial, sans-serif; fill: #ecfeff; }
+      .title { font: 800 36px Segoe UI, Arial, sans-serif; fill: #ffffff; letter-spacing: 0; }
+      .sub { font: 650 19px Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
+      .card { fill: rgba(255,255,255,.12); stroke: rgba(255,255,255,.28); stroke-width: 1.2; }
+      .card2 { fill: rgba(15,23,42,.48); stroke: rgba(255,255,255,.22); stroke-width: 1.2; }
+      .tag { font: 800 17px Segoe UI, Arial, sans-serif; fill: #f8fafc; letter-spacing: 0; }
+      .note { font: 600 14px Segoe UI, Arial, sans-serif; fill: #cffafe; letter-spacing: 0; }
+      .barA { fill: #38bdf8; animation: barA 3.8s ease-in-out infinite; transform-origin: bottom; }
+      .barB { fill: #fbbf24; animation: barB 4.2s ease-in-out infinite; transform-origin: bottom; }
+      .barC { fill: #a7f3d0; animation: barC 4.6s ease-in-out infinite; transform-origin: bottom; }
+      @keyframes barA { 0%, 100% { transform: scaleY(.72); opacity: .72; } 50% { transform: scaleY(1); opacity: 1; } }
+      @keyframes barB { 0%, 100% { transform: scaleY(.58); opacity: .7; } 50% { transform: scaleY(.95); opacity: 1; } }
+      @keyframes barC { 0%, 100% { transform: scaleY(.82); opacity: .76; } 50% { transform: scaleY(1.06); opacity: 1; } }
     </style>
   </defs>
-  <rect width="1100" height="300" rx="26" fill="url(#bg)"/>
-  <path d="M40 210 C160 120 260 280 385 188 S610 100 740 182 S930 250 1060 138" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round" filter="url(#glow)">
-</path>
-  <path d="M40 238 C170 168 250 260 390 226 S620 170 760 224 S940 275 1060 210" fill="none" stroke="#bfdbfe" stroke-width="3" stroke-linecap="round" opacity=".78">
-</path>
-  <g transform="translate(70 56)">
-    <text x="0" y="0" class="mono">MATLAB signal lab / reviewer-ready portfolio</text>
-    <text x="0" y="68" class="title">Digital Communications</text>
-    <text x="0" y="104" class="sub">AWGN - Matched Filter - BER - QPSK - Companding - LDPC</text>
+  <rect width="1100" height="300" rx="26" fill="url(#bg)" />
+  <rect x="42" y="36" width="486" height="102" rx="18" class="card2" />
+  <text x="70" y="80" class="title">Signal Processing Lab</text>
+  <text x="72" y="113" class="sub">MATLAB simulations for communications review.</text>
+
+  <rect x="558" y="36" width="306" height="102" rx="18" class="card" />
+  <text x="586" y="73" class="tag">Core Review Path</text>
+  <text x="586" y="101" class="note">Scripts -> figures -> reports -> release</text>
+  <text x="586" y="124" class="note">No line motion behind text.</text>
+
+  <rect x="890" y="36" width="94" height="102" rx="18" class="card" />
+  <rect x="915" y="78" width="12" height="48" rx="6" class="barA" />
+  <rect x="938" y="64" width="12" height="62" rx="6" class="barB" />
+  <rect x="961" y="52" width="12" height="74" rx="6" class="barC" />
+  <text x="937" y="158" text-anchor="middle" class="note">BER</text>
+
+  <g>
+    <rect x="72" y="184" width="146" height="58" rx="18" class="card" />
+    <text x="145" y="219" text-anchor="middle" class="tag">AWGN</text>
+    <rect x="242" y="184" width="172" height="58" rx="18" class="card" />
+    <text x="328" y="219" text-anchor="middle" class="tag">Matched Filter</text>
+    <rect x="438" y="184" width="112" height="58" rx="18" class="card" />
+    <text x="494" y="219" text-anchor="middle" class="tag">BASK</text>
+    <rect x="574" y="184" width="112" height="58" rx="18" class="card" />
+    <text x="630" y="219" text-anchor="middle" class="tag">BPSK</text>
+    <rect x="710" y="184" width="112" height="58" rx="18" class="card" />
+    <text x="766" y="219" text-anchor="middle" class="tag">BFSK</text>
+    <rect x="846" y="184" width="112" height="58" rx="18" class="card" />
+    <text x="902" y="219" text-anchor="middle" class="tag">QPSK</text>
   </g>
-  <g style="animation: float 5s ease-in-out infinite">
-    <rect x="756" y="46" width="108" height="42" rx="14" class="chip"/>
-    <text x="782" y="73" class="chiptext">AWGN</text>
-  </g>
-  <g style="animation: float 6s ease-in-out infinite">
-    <rect x="890" y="64" width="104" height="42" rx="14" class="chip"/>
-    <text x="922" y="91" class="chiptext">BER</text>
-  </g>
-  <g style="animation: float 5.8s ease-in-out infinite">
-    <rect x="776" y="122" width="120" height="42" rx="14" class="chip"/>
-    <text x="807" y="149" class="chiptext">QPSK</text>
-  </g>
-  <g style="animation: float 6.4s ease-in-out infinite">
-    <rect x="922" y="142" width="112" height="42" rx="14" class="chip"/>
-    <text x="952" y="169" class="chiptext">LDPC</text>
-  </g>
-  <g fill="#fbbf24" filter="url(#glow)">
-    <circle cx="168" cy="210" r="4" style="animation:pulse 2s ease-in-out infinite"/>
-    <circle cx="385" cy="188" r="4" style="animation:pulse 2.4s ease-in-out infinite"/>
-    <circle cx="740" cy="182" r="4" style="animation:pulse 2.8s ease-in-out infinite"/>
-    <circle cx="1014" cy="154" r="4" style="animation:pulse 2.2s ease-in-out infinite"/>
-  </g>
+
+  <rect x="72" y="260" width="250" height="24" rx="12" fill="rgba(15,23,42,.56)" />
+  <rect x="346" y="260" width="232" height="24" rx="12" fill="rgba(15,23,42,.56)" />
+  <rect x="602" y="260" width="300" height="24" rx="12" fill="rgba(15,23,42,.56)" />
+  <text x="197" y="278" text-anchor="middle" class="note">Companding: A-law and mu-law</text>
+  <text x="462" y="278" text-anchor="middle" class="note">LDPC bit-flipping decoder</text>
+  <text x="752" y="278" text-anchor="middle" class="note">Reports, slides and release snapshots</text>
 </svg>

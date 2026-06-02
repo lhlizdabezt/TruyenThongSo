@@ -1,17 +1,17 @@
-# Visual Line Safety Fix - 2026-06-02
+# English Portfolio Quality Pass - 2026-06-02
 
 ## Scope
 
-This update keeps `TruyenThongSo` aligned with the English-facing engineering portfolio while removing dash-line motion from SVG visuals.
+This update tightens `TruyenThongSo` for English-facing GitHub portfolio review. It focuses on reviewer guidance, SVG safety, MATLAB text cleanup and release-backed evidence.
 
 ## Changes
 
-- Cleaned `assets/digital-comms-motion.svg` so SVG motion no longer uses moving dashed or dotted line effects.
-- Cleaned `assets/portfolio-motion.svg` so SVG motion no longer uses moving dashed or dotted line effects.
-- Adjusted portfolio-card title sizing so long English project names fit without clipping.
-- Preserved ASCII-safe English SVG text and existing non-line motion such as pulse, shimmer, float or scan effects.
-- Kept repository claims evidence-first and bounded to the source tree, reports, releases and visual assets.
+- Rewrote `README.md` as a complete English reviewer guide with technical coverage, repository map, run instructions, suggested review order, scope boundaries and release notes.
+- Replaced both SVG visuals with line-free layouts. The new assets avoid animated dashed lines, dotted routes and curved connector lines so text is not placed behind moving graphics.
+- Kept all SVG text English and ASCII-safe to avoid mojibake in GitHub rendering.
+- Cleaned editable MATLAB comments and console output in the LDPC and companding project files from Vietnamese or mojibake text into English.
+- Preserved the original report PDFs, slide PDF, zip snapshots, audio sample and generated figures as evidence artifacts.
 
 ## Review Context
 
-The latest release points to the commit containing this visual cleanup, so GitHub README embeds and release assets can be reviewed from a stable tag.
+This repository remains an academic digital communications project. The strongest evidence is MATLAB modelling for AWGN, matched filtering, BER analysis, BASK/BPSK/BFSK/QPSK, companding and LDPC decoding, supported by reports and versioned releases.

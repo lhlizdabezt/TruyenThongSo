@@ -1,7 +1,7 @@
 clear; close all; clc;
 
-% Cau 1 - Ve gian do Tanner cho ma tran H
-% Lương Hải Long - 22207056
+% Question 1 - Draw the Tanner graph for parity-check matrix H
+% Luong Hai Long - 22207056
 
 baseDir = fileparts(mfilename('fullpath'));
 
@@ -10,9 +10,9 @@ H = [1 1 0 1 0 0;
      1 0 0 0 1 1;
      0 0 1 1 0 1];
 
-fig = figure('Name','Gian do Tanner cua ma tran H');
+fig = figure('Name','Tanner graph for parity-check matrix H');
 hold on; grid on; axis off;
-title('Gian do Tanner cua ma tran kiem tra parity H');
+title('Tanner graph for parity-check matrix H');
 
 x_var = 1:6;
 y_var = 2.0 * ones(1,6);

@@ -1,7 +1,7 @@
 clear; close all; clc;
 
-% Project 1 - A-Law and mu-Law Companding
-% Lương Hải Long - 22207056
+% Project 1 - A-law and mu-law companding
+% Luong Hai Long - 22207056
 
 baseDir = fileparts(mfilename('fullpath'));
 audioFile = fullfile(baseDir, 'MaleSpeech-16-4-mono-20secs.wav');
@@ -119,9 +119,9 @@ fprintf('(S/N)_se7_A       = %.6f\n', SNR_se7_A);
 fprintf('(S/N)_se7_A_dB    = %.6f dB\n\n', SNR_se7_A_dB);
 
 if SNR_se7_A > SNR_se7_mu
-    fprintf('Nhan xet: A-law cho SNR tot hon mu-law voi bo tham so nay.\n');
+    fprintf('Observation: A-law gives a higher SNR than mu-law for this parameter set.\n');
 else
-    fprintf('Nhan xet: mu-law cho SNR tot hon A-law voi bo tham so nay.\n');
+    fprintf('Observation: mu-law gives a higher SNR than A-law for this parameter set.\n');
 end
 
 % ========================= LOCAL FUNCTIONS =========================

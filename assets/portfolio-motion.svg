@@ -1,45 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">Digital Communications MATLAB Coursework animated portfolio visual</title>
-  <desc id="desc">Animated SVG visual summarizing TruyenThongSo for GitHub portfolio review.</desc>
-  <style>
-    .bg { fill: #0f172a; }
-    .panel { fill: #111827; stroke: #38bdf8; stroke-width: 2; }
-    .panel2 { fill: #172554; stroke: #f59e0b; stroke-width: 2; }
-    .title { font: 800 34px Segoe UI, Arial, sans-serif; fill: #f8fafc; }
-    .subtitle { font: 600 22px Segoe UI, Arial, sans-serif; fill: #bae6fd; }
-    .body { font: 500 18px Segoe UI, Arial, sans-serif; fill: #dbeafe; }
-    .small { font: 700 16px Segoe UI, Arial, sans-serif; fill: #0f172a; }
-    .chip { fill: #f8fafc; }
-    .node { fill: #22d3ee; }
-    .node2 { fill: #f59e0b; }
-    .wire { stroke: #93c5fd; stroke-width: 5; stroke-linecap: round; }
-    .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
-    @keyframes pulse { 0%, 100% { opacity: .55; transform: scale(.96); } 50% { opacity: 1; transform: scale(1.04); } }
-  </style>
-  <rect class="bg" width="1200" height="360" rx="28" />
-  <circle cx="1040" cy="72" r="42" fill="#1e293b" />
-  <circle class="pulse" cx="1040" cy="72" r="24" fill="#38bdf8" opacity=".85" />
-  <rect x="50" y="48" width="760" height="118" rx="20" class="panel" />
-  <text x="82" y="105" class="title">Digital Communications MATLAB Coursework</text>
-  <text x="84" y="143" class="subtitle">Digital communications and signal processing</text>
-  <rect x="850" y="48" width="300" height="118" rx="20" class="panel2" />
-  <text x="878" y="92" class="subtitle">Portfolio Signal</text>
-  <text x="878" y="127" class="body">English - visual - release</text>
-  <path d="M120 236 C 250 180, 360 292, 500 236 S 750 180, 900 236 S 1060 292, 1120 236" class="wire" fill="none" />
-  <g>
-    <circle class="node pulse" cx="140" cy="236" r="28" />
-    <circle class="node2 pulse" cx="380" cy="236" r="28" />
-    <circle class="node pulse" cx="620" cy="236" r="28" />
-    <circle class="node2 pulse" cx="860" cy="236" r="28" />
-    <circle class="node pulse" cx="1080" cy="236" r="28" />
+  <title id="title">Digital Communications MATLAB Coursework portfolio visual</title>
+  <desc id="desc">Line-free SVG visual summarizing TruyenThongSo for GitHub portfolio review.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111f" />
+      <stop offset="55%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <style>
+      .title { font: 800 38px Segoe UI, Arial, sans-serif; fill: #f8fafc; letter-spacing: 0; }
+      .subtitle { font: 650 22px Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
+      .body { font: 550 17px Segoe UI, Arial, sans-serif; fill: #e0f2fe; letter-spacing: 0; }
+      .label { font: 800 17px Segoe UI, Arial, sans-serif; fill: #0f172a; letter-spacing: 0; }
+      .small { font: 700 15px Segoe UI, Arial, sans-serif; fill: #dbeafe; letter-spacing: 0; }
+      .panel { fill: rgba(15, 23, 42, .72); stroke: rgba(255, 255, 255, .22); stroke-width: 1.5; }
+      .light { fill: #e0f2fe; }
+      .accent { fill: #fbbf24; }
+      .teal { fill: #2dd4bf; }
+      .blue { fill: #60a5fa; }
+      .pulse { animation: pulse 3s ease-in-out infinite; transform-origin: center; }
+      .soft { animation: soft 4.5s ease-in-out infinite; transform-origin: center; }
+      @keyframes pulse { 0%, 100% { opacity: .72; transform: scale(.985); } 50% { opacity: 1; transform: scale(1.025); } }
+      @keyframes soft { 0%, 100% { opacity: .62; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)" />
+  <rect x="44" y="42" width="640" height="134" rx="22" class="panel" />
+  <text x="76" y="94" class="title">Digital Communications</text>
+  <text x="78" y="131" class="subtitle">MATLAB coursework portfolio</text>
+  <text x="78" y="160" class="body">AWGN, matched filters, BER, QPSK, companding and LDPC.</text>
+
+  <rect x="716" y="42" width="418" height="134" rx="22" class="panel" />
+  <text x="746" y="82" class="subtitle">Reviewer Signals</text>
+  <text x="746" y="116" class="body">English docs, releases, reports and scripts.</text>
+  <text x="746" y="150" class="body">Traceable MATLAB evidence with clear scope.</text>
+
+  <g class="pulse">
+    <rect x="74" y="222" width="154" height="52" rx="18" class="light" />
+    <text x="151" y="255" text-anchor="middle" class="label">MATLAB</text>
   </g>
-  <g>
-    <rect x="74" y="278" width="138" height="34" rx="17" class="chip" /><text x="143" y="301" text-anchor="middle" class="small">MATLAB</text>
-    <rect x="300" y="278" width="160" height="34" rx="17" class="chip" /><text x="380" y="301" text-anchor="middle" class="small">AWGN</text>
-    <rect x="532" y="278" width="176" height="34" rx="17" class="chip" /><text x="620" y="301" text-anchor="middle" class="small">matched filters</text>
-    <rect x="774" y="278" width="172" height="34" rx="17" class="chip" /><text x="860" y="301" text-anchor="middle" class="small">BER</text>
-    <rect x="1000" y="278" width="160" height="34" rx="17" class="chip" /><text x="1080" y="301" text-anchor="middle" class="small">BPSK</text>
+  <g class="soft">
+    <rect x="252" y="222" width="142" height="52" rx="18" class="accent" />
+    <text x="323" y="255" text-anchor="middle" class="label">AWGN</text>
   </g>
-  <text x="66" y="200" class="body">Digital communications coursework with modulation, filtering and BER analysis.</text>
-  <text x="66" y="330" class="body">Covers BASK, BPSK, BFSK, QPSK, companding and LDPC-related report evidence.</text>
+  <g class="pulse">
+    <rect x="418" y="222" width="194" height="52" rx="18" class="teal" />
+    <text x="515" y="255" text-anchor="middle" class="label">Matched Filter</text>
+  </g>
+  <g class="soft">
+    <rect x="636" y="222" width="122" height="52" rx="18" class="blue" />
+    <text x="697" y="255" text-anchor="middle" class="label">BER</text>
+  </g>
+  <g class="pulse">
+    <rect x="782" y="222" width="138" height="52" rx="18" class="light" />
+    <text x="851" y="255" text-anchor="middle" class="label">QPSK</text>
+  </g>
+  <g class="soft">
+    <rect x="944" y="222" width="154" height="52" rx="18" class="accent" />
+    <text x="1021" y="255" text-anchor="middle" class="label">LDPC</text>
+  </g>
+
+  <rect x="74" y="306" width="350" height="26" rx="13" fill="rgba(15,23,42,.72)" />
+  <rect x="450" y="306" width="300" height="26" rx="13" fill="rgba(15,23,42,.72)" />
+  <rect x="776" y="306" width="322" height="26" rx="13" fill="rgba(15,23,42,.72)" />
+  <text x="249" y="325" text-anchor="middle" class="small">Digital communications foundations</text>
+  <text x="600" y="325" text-anchor="middle" class="small">Report-backed coursework evidence</text>
+  <text x="937" y="325" text-anchor="middle" class="small">GitHub-ready visual review assets</text>
 </svg>
