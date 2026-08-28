@@ -1,17 +1,20 @@
-# English Portfolio Quality Pass - 2026-06-02
-
-## Scope
-
-This update tightens `TruyenThongSo` for English-facing GitHub portfolio review. It focuses on reviewer guidance, SVG safety, MATLAB text cleanup and release-backed evidence.
+# v1.2.1 - Visual Evidence Refresh
 
 ## Changes
 
-- Rewrote `README.md` as a complete English reviewer guide with technical coverage, repository map, run instructions, suggested review order, scope boundaries and release notes.
-- Replaced both SVG visuals with line-free layouts. The new assets avoid animated dashed lines, dotted routes and curved connector lines so text is not placed behind moving graphics.
-- Kept all SVG text English and ASCII-safe to avoid mojibake in GitHub rendering.
-- Cleaned editable MATLAB comments and console output in the LDPC and companding project files from Vietnamese or mojibake text into English.
-- Preserved the original report PDFs, slide PDF, zip snapshots, audio sample and generated figures as evidence artifacts.
+- Added a four-image results gallery for uniform quantization, mu-law, A-law, and the LDPC Tanner graph.
+- Regenerated the Tanner graph with English labels from the parity-check matrix used by the MATLAB source.
+- Added a reproducible Python renderer for future label and spacing corrections.
+- Added the complete contact and professional-link block without adding a project-level profile-view counter.
+- Preserved MATLAB scripts, report PDFs, slide PDF, audio input, generated figures, and original coursework archives.
 
-## Review Context
+## Verification
 
-This repository remains an academic digital communications project. The strongest evidence is MATLAB modelling for AWGN, matched filtering, BER analysis, BASK/BPSK/BFSK/QPSK, companding and LDPC decoding, supported by reports and versioned releases.
+- Generated image labels and README captions were checked in US English.
+- README local links and visual references were checked against tracked files.
+- MATLAB source was reviewed statically; MATLAB execution was not available in the current environment.
+- SVG assets were rendered and checked for ASCII safety, clipping, and connector-line interference.
+
+## Boundary
+
+This is academic MATLAB coursework. It demonstrates simulation and report evidence, not a production modem or deployed telecommunications system.

@@ -30,7 +30,7 @@
   <rect x="558" y="36" width="306" height="102" rx="18" class="card" />
   <text x="586" y="73" class="tag">Core Review Path</text>
   <text x="586" y="101" class="note">Scripts -> figures -> reports -> release</text>
-  <text x="586" y="124" class="note">No line motion behind text.</text>
+  <text x="586" y="124" class="note">AWGN, BER, filters, companding, and LDPC evidence.</text>
 
   <rect x="890" y="36" width="94" height="102" rx="18" class="card" />
   <rect x="915" y="78" width="12" height="48" rx="6" class="barA" />

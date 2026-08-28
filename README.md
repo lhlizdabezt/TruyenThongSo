@@ -47,6 +47,19 @@
 | Speech companding | Uniform quantization, mu-law compression/expansion, A-law compression/expansion and SNR comparison |
 | LDPC basics | Tanner graph construction, parity-check matrix reasoning and bit-flipping decoding |
 
+## Result gallery
+
+<table>
+  <tr>
+    <td width="50%"><img src="Nhom5_DoAnTTS/Project1/project1_uniform.png" alt="Speech waveform and uniform quantization result" width="100%" /><br /><sub>Uniform quantization of the speech sample.</sub></td>
+    <td width="50%"><img src="Nhom5_DoAnTTS/Project1/project1_mu.png" alt="Mu-law compression quantization and expansion" width="100%" /><br /><sub>Mu-law compression, quantization, and expansion.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="Nhom5_DoAnTTS/Project1/project1_a.png" alt="A-law compression quantization and expansion" width="100%" /><br /><sub>A-law compression, quantization, and expansion.</sub></td>
+    <td width="50%"><img src="Nhom5_DoAnTTS/Project4/tanner_ldpc.png" alt="Tanner graph for the LDPC parity-check matrix" width="100%" /><br /><sub>Tanner graph generated from the checked-in parity-check matrix.</sub></td>
+  </tr>
+</table>
+
 ## Repository Structure
 
 | Path | Purpose |
@@ -100,6 +113,22 @@ This is an academic digital communications repository. It demonstrates MATLAB mo
 ## Portfolio Context
 
 Luong Hai Long uses this repository as telecommunications evidence within a broader engineering portfolio that also includes computer vision, AI/ML, embedded systems, FPGA/SoC and firmware projects. This repository is strongest as proof of digital communications fundamentals: AWGN analysis, matched filtering, BER reasoning, passband modulation and coding-theory exercises.
+
+<details>
+<summary>Contact and professional links</summary>
+
+| Channel | Link |
+|---|---|
+| GitHub | [lhlizdabezt](https://github.com/lhlizdabezt) |
+| LinkedIn | [linkedin.com/in/lhlizdabezt](https://www.linkedin.com/in/lhlizdabezt) |
+| Facebook | [facebook.com/wageseadrake](https://www.facebook.com/wageseadrake) |
+| Instagram | [instagram.com/lhlizdabezt](https://www.instagram.com/lhlizdabezt) |
+| YouTube | [youtube.com/@lhlizdabezt](https://www.youtube.com/@lhlizdabezt) |
+| TikTok | [tiktok.com/@wageseadrake](https://www.tiktok.com/@wageseadrake) |
+| Email | [22207056@student.hcmus.edu.vn](mailto:22207056@student.hcmus.edu.vn), [luonghailong.work@gmail.com](mailto:luonghailong.work@gmail.com) |
+| Phone | [+84 988 114 708](tel:+84988114708) |
+
+</details>
 
 ## Visual Asset Policy
 
