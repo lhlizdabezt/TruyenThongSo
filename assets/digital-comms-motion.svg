@@ -27,10 +27,11 @@
   <text x="70" y="80" class="title">Signal Processing Lab</text>
   <text x="72" y="113" class="sub">MATLAB simulations for communications review.</text>
 
-  <rect x="558" y="36" width="306" height="102" rx="18" class="card" />
-  <text x="586" y="73" class="tag">Core Review Path</text>
-  <text x="586" y="101" class="note">Scripts -> figures -> reports -> release</text>
-  <text x="586" y="124" class="note">AWGN, BER, filters, companding, and LDPC evidence.</text>
+  <rect x="548" y="32" width="330" height="112" rx="18" class="card" />
+  <text x="576" y="68" class="tag">Core Review Path</text>
+  <text x="576" y="94" class="note">Scripts, figures, reports, and release.</text>
+  <text x="576" y="116" class="note">AWGN and matched-filter evidence.</text>
+  <text x="576" y="136" class="note">BER, companding, and LDPC.</text>
 
   <rect x="890" y="36" width="94" height="102" rx="18" class="card" />
   <rect x="915" y="78" width="12" height="48" rx="6" class="barA" />

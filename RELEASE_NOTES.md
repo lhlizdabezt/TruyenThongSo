@@ -1,3 +1,26 @@
+# v1.2.3 - Evidence Layout and Source Boundary Repair
+
+## Changes
+
+- Replaced the two-column result table with a one-image-per-row layout that stays readable on narrow GitHub views.
+- Added a source-evidence matrix for AWGN, matched filtering, BER, companding, and LDPC work; it identifies what is source-reviewed, what has a checked-in output, and what requires MATLAB reproduction.
+- Added the stored MATLAB command-window captures for the companding and LDPC projects.
+- Reflowed the technical-map SVG core-review card into three short lines inside a wider card, eliminating the prior text overflow.
+- Retained existing report, presentation, and assignment downloads at their immutable `v1.2.2` links; this release does not republish course handouts.
+
+## Verification
+
+- Confirmed the README image references resolve to tracked files.
+- Confirmed the evidence statements map to the named MATLAB source files and do not claim a fresh MATLAB run.
+- Confirmed the revised SVG uses English ASCII-safe text and has no dotted, dashed, curved, or connector lines.
+- Confirmed the gallery no longer uses a multi-column HTML table.
+
+## Boundary
+
+This remains academic MATLAB coursework. The AWGN, matched-filter, and BER models are source-reviewed in this release; MATLAB execution is required for fresh numerical reproduction.
+
+---
+
 # v1.2.2 - Release Evidence Package
 
 ## Changes

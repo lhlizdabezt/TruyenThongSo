@@ -47,18 +47,50 @@
 | Speech companding | Uniform quantization, mu-law compression/expansion, A-law compression/expansion and SNR comparison |
 | LDPC basics | Tanner graph construction, parity-check matrix reasoning and bit-flipping decoding |
 
+## Evidence Status
+
+The table separates source-reviewed models from checked-in output files. MATLAB is required to reproduce the interactive figures; it was not available in the review environment for this release.
+
+| Topic | Source location | Evidence available now | Review boundary |
+|---|---|---|---|
+| AWGN channel | `Chapter3/22207056_LuongHaiLong/Question1.m` | Binary waveform construction, `w = sqrt(B*N0_2) * randn`, received waveform `r = s + w`, and interactive plots | Source-reviewed model; the script does not save a figure file |
+| Matched filter | `Chapter3/22207056_LuongHaiLong/Question2.m` | Filter convolution, sampling decision, thresholding, and simulated-versus-theoretical error expression | Source-reviewed model; reproduce in MATLAB for numeric results |
+| BER comparison | `Chapter4/22207056_LuongHaiLong/Problem1.m` through `Problem4.m`, `Chapter4QPSK/22207056_LuongHaiLong/QPSK.m` | BASK, BPSK, BFSK, and QPSK BER logic and comparison plots | Source-reviewed scripts; no new runtime plot is claimed here |
+| Speech companding | `Nhom5_DoAnTTS/Project1/Project1.m` | Checked-in uniform, mu-law, and A-law figure outputs plus a command-window capture | Stored output files are shown below |
+| LDPC decoding | `Nhom5_DoAnTTS/Project4/DoAn4.m` | Checked-in Tanner graph and command-window capture for the parity-check and bit-flipping exercise | Stored output files are shown below |
+
 ## Result gallery
 
-<table>
-  <tr>
-    <td width="50%"><img src="Nhom5_DoAnTTS/Project1/project1_uniform.png" alt="Speech waveform and uniform quantization result" width="100%" /><br /><sub>Uniform quantization of the speech sample.</sub></td>
-    <td width="50%"><img src="Nhom5_DoAnTTS/Project1/project1_mu.png" alt="Mu-law compression quantization and expansion" width="100%" /><br /><sub>Mu-law compression, quantization, and expansion.</sub></td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="Nhom5_DoAnTTS/Project1/project1_a.png" alt="A-law compression quantization and expansion" width="100%" /><br /><sub>A-law compression, quantization, and expansion.</sub></td>
-    <td width="50%"><img src="Nhom5_DoAnTTS/Project4/tanner_ldpc.png" alt="Tanner graph for the LDPC parity-check matrix" width="100%" /><br /><sub>Tanner graph generated from the checked-in parity-check matrix.</sub></td>
-  </tr>
-</table>
+The gallery uses one image per row so the figures remain readable on narrow GitHub views. These are saved outputs from the named source files, not substitutes for the AWGN, filter, or BER scripts that render interactively.
+
+### Speech companding outputs
+
+<p align="center"><img src="Nhom5_DoAnTTS/Project1/project1_uniform.png" alt="Speech waveform and uniform quantization result" width="100%" /></p>
+
+Uniform quantization of the checked-in speech sample.
+
+<p align="center"><img src="Nhom5_DoAnTTS/Project1/project1_mu.png" alt="Mu-law compression, quantization, and expansion result" width="100%" /></p>
+
+Mu-law compression, quantization, and expansion.
+
+<p align="center"><img src="Nhom5_DoAnTTS/Project1/project1_a.png" alt="A-law compression, quantization, and expansion result" width="100%" /></p>
+
+A-law compression, quantization, and expansion.
+
+### LDPC output
+
+<p align="center"><img src="Nhom5_DoAnTTS/Project4/tanner_ldpc.png" alt="Tanner graph generated from the checked-in LDPC parity-check matrix" width="100%" /></p>
+
+Tanner graph generated from the parity-check matrix used by the checked-in LDPC exercise.
+
+<details>
+<summary>Command-window captures for the saved projects</summary>
+
+<p align="center"><img src="Nhom5_DoAnTTS/Project1/project1_cmd.png" alt="MATLAB command-window capture for the companding project" width="100%" /></p>
+
+<p align="center"><img src="Nhom5_DoAnTTS/Project4/project4_cmd.png" alt="MATLAB command-window capture for the LDPC project" width="100%" /></p>
+
+</details>
 
 ## Repository Structure
 
@@ -87,7 +119,7 @@
    ```
 
 3. Open MATLAB from the repository root or add the target script folder to the MATLAB path.
-4. Run the desired script from its own folder so saved figures are written beside the source file:
+4. Run the desired script from its own folder. The Chapter 3 and Chapter 4 scripts display interactive MATLAB figures; `Project1.m` and `DoAn4.m` also save the checked-in project figures beside their source files.
 
    ```matlab
    cd Chapter4QPSK/22207056_LuongHaiLong
@@ -114,12 +146,13 @@ This is an academic digital communications repository. It demonstrates MATLAB mo
 
 | Artifact | Purpose |
 |---|---|
-| [Digital communications report](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/Nhom5_DoAnTTS.pdf) | Companding, LDPC, results, and project discussion |
-| [Presentation deck](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/Nhom5_Slide_DoAnTTS.pdf) | Course presentation evidence |
-| [Project 1 brief](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/Project1_Brief.pdf) | Speech companding assignment |
-| [Project 4 brief](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/DoAn4_Brief.pdf) | LDPC assignment |
-| [Source snapshot](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/TruyenThongSo-source-v1.2.2.zip) | Full tracked repository state |
+| [Digital communications report](https://github.com/lhlizdabezt/TruyenThongSo/releases/download/v1.2.2/Nhom5_DoAnTTS.pdf) | Existing report retained with the original evidence package |
+| [Presentation deck](https://github.com/lhlizdabezt/TruyenThongSo/releases/download/v1.2.2/Nhom5_Slide_DoAnTTS.pdf) | Existing course presentation retained with the original evidence package |
+| [Project 1 brief](https://github.com/lhlizdabezt/TruyenThongSo/releases/download/v1.2.2/Project1_Brief.pdf) | Existing speech-companding assignment brief |
+| [Project 4 brief](https://github.com/lhlizdabezt/TruyenThongSo/releases/download/v1.2.2/DoAn4_Brief.pdf) | Existing LDPC assignment brief |
+| [Source snapshot](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/TruyenThongSo-source-v1.2.3.zip) | Full tracked repository state at the evidence-layout release |
 | [Portfolio visual](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/portfolio-motion.svg) | Stable English project summary |
+| [Technical map](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/digital-comms-motion.svg) | Line-free English topic map |
 
 ## Portfolio Context
 
@@ -147,4 +180,4 @@ The checked-in SVG visuals use English ASCII-safe text. They avoid animated dash
 
 ## Release and Tagging Notes
 
-Releases and tags preserve stable review points for HR, academic and engineering reviewers. The latest release includes the report, presentation, assignment briefs, line-free SVG visuals, and full tracked source snapshot.
+Releases and tags preserve stable review points for HR, academic, and engineering reviewers. Version `v1.2.2` retains the original report, presentation, and assignment downloads. Version `v1.2.3` adds the repaired evidence layout, line-free SVG visuals, and a full tracked source snapshot without republishing course handouts.
