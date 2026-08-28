@@ -110,6 +110,17 @@
 
 This is an academic digital communications repository. It demonstrates MATLAB modelling, signal-processing foundations and report discipline; it is not a production modem, radio stack or telecom network implementation.
 
+## Release Downloads
+
+| Artifact | Purpose |
+|---|---|
+| [Digital communications report](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/Nhom5_DoAnTTS.pdf) | Companding, LDPC, results, and project discussion |
+| [Presentation deck](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/Nhom5_Slide_DoAnTTS.pdf) | Course presentation evidence |
+| [Project 1 brief](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/Project1_Brief.pdf) | Speech companding assignment |
+| [Project 4 brief](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/DoAn4_Brief.pdf) | LDPC assignment |
+| [Source snapshot](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/TruyenThongSo-source-v1.2.2.zip) | Full tracked repository state |
+| [Portfolio visual](https://github.com/lhlizdabezt/TruyenThongSo/releases/latest/download/portfolio-motion.svg) | Stable English project summary |
+
 ## Portfolio Context
 
 Luong Hai Long uses this repository as telecommunications evidence within a broader engineering portfolio that also includes computer vision, AI/ML, embedded systems, FPGA/SoC and firmware projects. This repository is strongest as proof of digital communications fundamentals: AWGN analysis, matched filtering, BER reasoning, passband modulation and coding-theory exercises.
@@ -136,4 +147,4 @@ The checked-in SVG visuals use English ASCII-safe text. They avoid animated dash
 
 ## Release and Tagging Notes
 
-Releases and tags preserve stable review points for HR, academic and engineering reviewers. The latest release includes the README polish, line-free SVG visuals and source-state evidence for the repository.
+Releases and tags preserve stable review points for HR, academic and engineering reviewers. The latest release includes the report, presentation, assignment briefs, line-free SVG visuals, and full tracked source snapshot.

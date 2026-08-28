@@ -1,4 +1,4 @@
-# v1.2.1 - Visual Evidence Refresh
+# v1.2.2 - Release Evidence Package
 
 ## Changes
 
@@ -7,6 +7,7 @@
 - Added a reproducible Python renderer for future label and spacing corrections.
 - Added the complete contact and professional-link block without adding a project-level profile-view counter.
 - Preserved MATLAB scripts, report PDFs, slide PDF, audio input, generated figures, and original coursework archives.
+- Added direct release downloads for the report, presentation, assignment briefs, visuals, and full tracked source snapshot.
 
 ## Verification
 
